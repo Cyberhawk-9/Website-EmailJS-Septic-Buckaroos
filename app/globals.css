@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+}
+
+@layer base {
+  :root {
+    /* Background is now #980002 (red), text is #E35336 (orange) and black */
+    --background: 346 100% 30%; /* #980002 red */
+    --foreground: 0 0% 0%; /* black text */
+    --card: 346 100% 35%; /* slightly lighter red for cards */
+    --card-foreground: 0 0% 0%; /* black */
+    --popover: 346 100% 35%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 13 78% 55%; /* #E35336 orange */
+    --primary-foreground: 0 0% 0%; /* black on orange */
+    --secondary: 346 100% 35%; /* lighter red */
+    --secondary-foreground: 13 78% 55%; /* orange text */
+    --muted: 346 100% 25%; /* darker red */
+    --muted-foreground: 13 78% 55%; /* orange */
+    --accent: 13 78% 55%; /* #E35336 orange */
+    --accent-foreground: 0 0% 0%; /* black */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 346 50% 40%;
+    --input: 346 100% 35%;
+    --ring: 13 78% 55%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 346 100% 30%;
+    --foreground: 0 0% 0%;
+    --card: 346 100% 35%;
+    --card-foreground: 0 0% 0%;
+    --popover: 346 100% 35%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 13 78% 55%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 346 100% 35%;
+    --secondary-foreground: 13 78% 55%;
+    --muted: 346 100% 25%;
+    --muted-foreground: 13 78% 55%;
+    --accent: 13 78% 55%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 346 50% 40%;
+    --input: 346 100% 35%;
+    --ring: 13 78% 55%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
