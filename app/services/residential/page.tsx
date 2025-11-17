@@ -72,7 +72,7 @@ export default function ResidentialPage() {
                     },
                     {
                       title: 'System Evaluations',
-                      description: 'Comprehensive assessments of your septic system's condition and performance.',
+                      description: 'Comprehensive assessments of your septic system\'s condition and performance.',
                     },
                     {
                       title: 'Emergency Services',
@@ -101,11 +101,11 @@ export default function ResidentialPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground"><strong>Fast response times</strong> - We know septic issues can't wait</span>
+                    <span className="text-muted-foreground"><strong>Fast response times</strong> - We know septic issues can\'t wait</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground"><strong>Personal service</strong> - You're a person, not a number</span>
+                    <span className="text-muted-foreground"><strong>Personal service</strong> - You\'re a person, not a number</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />

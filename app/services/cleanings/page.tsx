@@ -52,11 +52,11 @@ export default function CleaningsPage() {
         },
       ]}
       benefits={[
-        '<strong>Prevent backups</strong> - Regular pumping eliminates the #1 cause of septic emergencies',
-        '<strong>Extend system life</strong> - Proper maintenance can add years to your septic system',
-        '<strong>Avoid costly repairs</strong> - Catching issues during routine service saves money',
-        '<strong>Professional equipment</strong> - Modern trucks and tools for efficient service',
-        '<strong>Fast, clean service</strong> - In and out quickly with minimal disruption',
+        "<strong>Prevent backups</strong> - Regular pumping eliminates the #1 cause of septic emergencies",
+        "<strong>Extend system life</strong> - Proper maintenance can add years to your septic system",
+        "<strong>Avoid costly repairs</strong> - Catching issues during routine service saves money",
+        "<strong>Professional equipment</strong> - Modern trucks and tools for efficient service",
+        "<strong>Fast, clean service</strong> - In and out quickly with minimal disruption",
       ]}
     />
   )

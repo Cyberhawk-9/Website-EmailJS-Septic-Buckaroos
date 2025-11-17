@@ -48,15 +48,15 @@ export default function TankLocationPage() {
         },
         {
           title: 'Documentation',
-          description: 'We\'ll provide measurements and documentation of your tank location for your records.',
+          description: "We'll provide measurements and documentation of your tank location for your records.",
         },
       ]}
       benefits={[
-        '<strong>Save time and money</strong> - No more guessing or unnecessary digging',
-        '<strong>Professional equipment</strong> - Specialized tools for accurate location',
-        '<strong>Experienced team</strong> - Years of experience finding tanks in all conditions',
-        '<strong>One-time service</strong> - Once found and marked (or risered), you'll always know where it is',
-        '<strong>Protect your yard</strong> - Minimal disruption to landscaping and property',
+        "<strong>Save time and money</strong> - No more guessing or unnecessary digging",
+        "<strong>Professional equipment</strong> - Specialized tools for accurate location",
+        "<strong>Experienced team</strong> - Years of experience finding tanks in all conditions",
+        "<strong>One-time service</strong> - Once found and marked (or risered), you'll always know where it is",
+        "<strong>Protect your yard</strong> - Minimal disruption to landscaping and property",
       ]}
     />
   )

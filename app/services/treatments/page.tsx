@@ -52,11 +52,11 @@ export default function TreatmentsPage() {
         },
       ]}
       benefits={[
-        '<strong>Improve system performance</strong> - Restore bacterial balance for optimal waste breakdown',
-        '<strong>Eliminate odors</strong> - Get rid of unpleasant septic smells',
-        '<strong>Prevent backups</strong> - Regular treatment reduces backup risk',
-        '<strong>Professional-grade products</strong> - More effective than store-bought treatments',
-        '<strong>Expert application</strong> - We know the right products and amounts for your system',
+        "<strong>Improve system performance</strong> - Restore bacterial balance for optimal waste breakdown",
+        "<strong>Eliminate odors</strong> - Get rid of unpleasant septic smells",
+        "<strong>Prevent backups</strong> - Regular treatment reduces backup risk",
+        "<strong>Professional-grade products</strong> - More effective than store-bought treatments",
+        "<strong>Expert application</strong> - We know the right products and amounts for your system",
       ]}
     />
   )

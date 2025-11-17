@@ -36,7 +36,7 @@ export function Header() {
     <header
       className={cn(
         'sticky top-0 z-50 w-full border-b backdrop-blur transition-all duration-300',
-        'bg-background/98',
+        'bg-white/98',
         isScrolled ? 'py-3' : 'py-5'
       )}
     >
@@ -52,7 +52,7 @@ export function Header() {
               className="transition-all duration-300"
             />
             <div className={cn(
-              "font-bold text-primary transition-all duration-300 whitespace-nowrap",
+              "font-bold text-foreground transition-all duration-300 whitespace-nowrap",
               isScrolled ? "text-lg md:text-xl" : "text-xl md:text-2xl"
             )}>
               Buckaroos Septics
@@ -74,18 +74,18 @@ export function Header() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 text-foreground hover:text-primary transition-colors py-2 font-medium">
+              <Link href="/services" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors py-2 font-medium">
                 Services
                 <ChevronDown className="h-4 w-4" />
-              </button>
+              </Link>
               {isServicesOpen && (
                 <div className="absolute top-full left-0 pt-2">
-                  <div className="w-80 bg-card border border-border rounded-lg shadow-lg py-2">
+                  <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg py-2">
                     {services.map((service) => (
                       <Link
                         key={service.href}
                         href={service.href}
-                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors"
+                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-gray-100 hover:text-primary transition-colors"
                       >
                         {service.name}
                       </Link>
@@ -107,9 +107,9 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
             <a 
               href="tel:928-771-2846" 
-              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors px-3 py-2 rounded-lg hover:bg-card"
+              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors px-3 py-2 rounded-lg hover:bg-muted"
             >
-              <Phone className="h-5 w-5 flex-shrink-0" />
+              <Phone className="h-5 w-5 flex-shrink-0 text-foreground" />
               <span className="font-semibold text-base whitespace-nowrap">928-771-2846</span>
             </a>
             <Button asChild size="lg">
@@ -122,7 +122,7 @@ export function Header() {
             className="lg:hidden flex-shrink-0"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
           </button>
         </div>
 
@@ -146,7 +146,13 @@ export function Header() {
             
             {/* Mobile Services */}
             <div>
-              <div className="py-2 font-semibold text-foreground">Services</div>
+              <Link 
+                href="/services" 
+                className="block py-2 font-semibold text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Services
+              </Link>
               <div className="pl-4 space-y-2">
                 {services.map((service) => (
                   <Link

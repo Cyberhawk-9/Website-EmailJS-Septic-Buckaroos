@@ -52,11 +52,11 @@ export default function InspectionCertificationPage() {
         },
       ]}
       benefits={[
-        '<strong>Fast turnaround</strong> - We know real estate deals move quickly',
-        '<strong>Certified inspectors</strong> - Experienced professionals you can trust',
-        '<strong>Detailed reports</strong> - Clear, comprehensive documentation',
-        '<strong>Realtor-friendly</strong> - We work with agents to ensure smooth transactions',
-        '<strong>Competitive pricing</strong> - Fair rates for quality inspections',
+        "<strong>Fast turnaround</strong> - We know real estate deals move quickly",
+        "<strong>Certified inspectors</strong> - Experienced professionals you can trust",
+        "<strong>Detailed reports</strong> - Clear, comprehensive documentation",
+        "<strong>Realtor-friendly</strong> - We work with agents to ensure smooth transactions",
+        "<strong>Competitive pricing</strong> - Fair rates for quality inspections",
       ]}
     />
   )

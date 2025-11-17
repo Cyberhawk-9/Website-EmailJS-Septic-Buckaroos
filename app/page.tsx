@@ -52,45 +52,45 @@ export default function HomePage() {
       </section>
 
       {/* Value Props */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-muted border-border">
+            <Card className="bg-white border-border">
               <CardContent className="pt-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-primary/20 p-4 rounded-full">
-                    <Clock className="h-8 w-8 text-primary" />
+                  <div className="bg-secondary/20 p-4 rounded-full">
+                    <Clock className="h-8 w-8 text-secondary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-primary">Quick Response</h3>
+                <h3 className="text-xl font-bold mb-2 text-foreground">Quick Response</h3>
                 <p className="text-foreground">
                   We know septic issues can sneak up on you fast. We respond quickly to get your problem solved.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-muted border-border">
+            <Card className="bg-white border-border">
               <CardContent className="pt-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-primary/20 p-4 rounded-full">
-                    <Heart className="h-8 w-8 text-primary" />
+                  <div className="bg-secondary/20 p-4 rounded-full">
+                    <Heart className="h-8 w-8 text-secondary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-primary">Personal Service</h3>
+                <h3 className="text-xl font-bold mb-2 text-foreground">Personal Service</h3>
                 <p className="text-foreground">
                   You're not just a number to us. We treat every customer as the individual person they are.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-muted border-border">
+            <Card className="bg-white border-border">
               <CardContent className="pt-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-primary/20 p-4 rounded-full">
-                    <Star className="h-8 w-8 text-primary" />
+                  <div className="bg-secondary/20 p-4 rounded-full">
+                    <Star className="h-8 w-8 text-secondary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-primary">Expert Service</h3>
+                <h3 className="text-xl font-bold mb-2 text-foreground">Expert Service</h3>
                 <p className="text-foreground">
                   Specializing in septic tank inspections, pumps, and maintenance for residential and commercial properties.
                 </p>
@@ -101,10 +101,10 @@ export default function HomePage() {
       </section>
 
       {/* About Preview */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Why Choose Buckaroos?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Why Choose Buckaroos?</h2>
             <p className="text-lg text-foreground mb-8 leading-relaxed">
               We know septic issues can sneak up on you fast. Whether the buyer of your home really loves that kitchen and is wanting to close the deal sooner than expected, or those unwanted flushed away items are returning with a vengeance, call Buckaroos. Specializing in septic tank inspections & pumps.
             </p>
@@ -116,9 +116,9 @@ export default function HomePage() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-primary">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">Our Services</h2>
           <p className="text-center text-foreground mb-12 max-w-2xl mx-auto">
             From routine maintenance to emergency repairs, we provide comprehensive septic services for residential and commercial properties throughout the Prescott Quad City area.
           </p>
@@ -150,40 +150,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Additional Images Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Our Work in Action</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/2025-11-17-12-20-10.jpg"
-                alt="Septic system installation"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/2025-11-17-12-20-37.jpg"
-                alt="Buckaroos septic service truck"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-primary">Get Your Free Quote</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">Get Your Free Quote</h2>
             <p className="text-center text-foreground mb-8">
               Fill out the form below and we'll get back to you promptly with your quote.
             </p>
-            <Card className="bg-muted border-border">
+            <Card className="bg-white border-border">
               <CardContent className="pt-6">
                 <ContactForm compact />
               </CardContent>

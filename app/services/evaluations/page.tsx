@@ -52,11 +52,11 @@ export default function EvaluationsPage() {
         },
       ]}
       benefits={[
-        '<strong>Catch problems early</strong> - Identify issues before they become expensive repairs',
-        '<strong>Optimize performance</strong> - Get recommendations to improve system efficiency',
-        '<strong>Plan for the future</strong> - Know when upgrades or replacements may be needed',
-        '<strong>Expert analysis</strong> - Years of experience with all types of septic systems',
-        '<strong>Comprehensive reporting</strong> - Detailed findings and clear recommendations',
+        "<strong>Catch problems early</strong> - Identify issues before they become expensive repairs",
+        "<strong>Optimize performance</strong> - Get recommendations to improve system efficiency",
+        "<strong>Plan for the future</strong> - Know when upgrades or replacements may be needed",
+        "<strong>Expert analysis</strong> - Years of experience with all types of septic systems",
+        "<strong>Comprehensive reporting</strong> - Detailed findings and clear recommendations",
       ]}
     />
   )

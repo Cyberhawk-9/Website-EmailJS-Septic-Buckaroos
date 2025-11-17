@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { ContactForm } from '@/components/contact-form'
 import { Button } from '@/components/ui/button'
-import { CheckCircle, type LucideIcon } from 'lucide-react'
+import { CheckCircle, Type as type, LucideIcon } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ReactNode } from 'react'
@@ -101,8 +101,8 @@ export function ServicePageTemplate({
                   <ul className="space-y-3">
                     {benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{benefit}</span>
+                        <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-foreground" dangerouslySetInnerHTML={{ __html: benefit }} />
                       </li>
                     ))}
                   </ul>

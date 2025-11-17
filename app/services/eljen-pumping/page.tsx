@@ -53,24 +53,24 @@ export default function EljenPumpingPage() {
         },
       ]}
       additionalContent={
-        <Card className="bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-900">
+        <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-900">
           <CardContent className="pt-6">
-            <h3 className="text-xl font-bold mb-3">What is an Eljen System?</h3>
-            <p className="text-muted-foreground mb-4 leading-relaxed">
+            <h3 className="text-xl font-bold mb-3 text-amber-900 dark:text-amber-100">What is an Eljen System?</h3>
+            <p className="text-amber-900/80 dark:text-amber-100/80 mb-4 leading-relaxed">
               Eljen Geotextile Sand Filters (GSF) are advanced wastewater treatment systems that provide a high level of treatment before discharge to the soil. They're often required in areas with poor soil conditions, high water tables, or when enhanced treatment is needed to protect groundwater or surface water.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-amber-900/80 dark:text-amber-100/80 leading-relaxed">
               These systems require more frequent pumping and maintenance than traditional septic systems, but they offer superior treatment and are often the only option for challenging sites. Proper maintenance is crucial for Eljen systems to function as designed and meet regulatory requirements.
             </p>
           </CardContent>
         </Card>
       }
       benefits={[
-        '<strong>Eljen expertise</strong> - Specialized training and experience with alternative systems',
-        '<strong>Proper maintenance schedule</strong> - We follow county guidelines for frequency',
-        '<strong>Complete service</strong> - All components serviced, not just the tank',
-        '<strong>Performance optimization</strong> - Keep your system working at peak efficiency',
-        '<strong>Regulatory compliance</strong> - Meet all local requirements and documentation needs',
+        "<strong>Eljen expertise</strong> - Specialized training and experience with alternative systems",
+        "<strong>Proper maintenance schedule</strong> - We follow county guidelines for frequency",
+        "<strong>Complete service</strong> - All components serviced, not just the tank",
+        "<strong>Performance optimization</strong> - Keep your system working at peak efficiency",
+        "<strong>Regulatory compliance</strong> - Meet all local requirements and documentation needs",
       ]}
     />
   )
