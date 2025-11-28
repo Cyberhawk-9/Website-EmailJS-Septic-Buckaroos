@@ -1,21 +1,33 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { ContactForm } from '@/components/contact-form'
-import { CheckCircle, Clock, Heart, Star } from 'lucide-react'
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { ContactForm } from "@/components/contact-form"
+import { Clock, Heart, Star } from "lucide-react"
 
 export default function HomePage() {
   const serviceCards = [
-    { name: 'Residential Services', href: '/services/residential', image: '/images/08_Services_Residential-home-septic.png' },
-    { name: 'Commercial Services', href: '/services/commercial', image: '/images/09_Services_Commercial-building.png' },
-    { name: 'Septic Inspection & Certification', href: '/services/inspection-certification', image: '/images/10_Services_Inspection-technician.png' },
-    { name: 'System Evaluations', href: '/services/evaluations', image: '/images/11_Services_Evaluation-assessment.png' },
-    { name: 'Tank Cleanings', href: '/services/cleanings', image: '/images/12_Services_Pumping-truck-work.png' },
-    { name: 'Tank Location', href: '/services/tank-location', image: '/images/13_Services_Tank-locating.png' },
-    { name: 'Septic Treatments', href: '/services/treatments', image: '/images/14_Services_Treatment-application.png' },
-    { name: 'Eljen System Pumping', href: '/services/eljen-pumping', image: '/images/15_Services_Eljen-system.png' },
-    { name: 'Risers Installation', href: '/services/risers', image: '/images/16_Services_Riser-installation.png' },
+    {
+      name: "Residential Services",
+      href: "/services/residential",
+      image: "/images/08_Services_Residential-home-septic.png",
+    },
+    { name: "Commercial Services", href: "/services/commercial", image: "/images/09_Services_Commercial-building.png" },
+    {
+      name: "Septic Inspection & Certification",
+      href: "/services/inspection-certification",
+      image: "/images/10_Services_Inspection-technician.png",
+    },
+    {
+      name: "System Evaluations",
+      href: "/services/evaluations",
+      image: "/images/11_Services_Evaluation-assessment.png",
+    },
+    { name: "Tank Cleanings", href: "/services/cleanings", image: "/images/12_Services_Pumping-truck-work.png" },
+    { name: "Tank Location", href: "/services/tank-location", image: "/images/13_Services_Tank-locating.png" },
+    { name: "Septic Treatments", href: "/services/treatments", image: "/images/14_Services_Treatment-application.png" },
+    { name: "Eljen System Pumping", href: "/services/eljen-pumping", image: "/images/15_Services_Eljen-system.png" },
+    { name: "Risers Installation", href: "/services/risers", image: "/images/16_Services_Riser-installation.png" },
   ]
 
   return (
@@ -32,7 +44,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
-        
+
         <div className="container mx-auto px-4 z-10 text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Professional Septic Services You Can Trust
@@ -44,7 +56,12 @@ export default function HomePage() {
             <Button size="lg" asChild>
               <Link href="/contact">Get a Free Quote</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white hover:text-foreground">
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white hover:text-[#980002]"
+            >
               <a href="tel:928-771-2846">Call: 928-771-2846</a>
             </Button>
           </div>
@@ -92,7 +109,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">Expert Service</h3>
                 <p className="text-foreground">
-                  Specializing in septic tank inspections, pumps, and maintenance for residential and commercial properties.
+                  Specializing in septic tank inspections, pumps, and maintenance for residential and commercial
+                  properties.
                 </p>
               </CardContent>
             </Card>
@@ -106,7 +124,9 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Why Choose Buckaroos?</h2>
             <p className="text-lg text-foreground mb-8 leading-relaxed">
-              We know septic issues can sneak up on you fast. Whether the buyer of your home really loves that kitchen and is wanting to close the deal sooner than expected, or those unwanted flushed away items are returning with a vengeance, call Buckaroos. Specializing in septic tank inspections & pumps.
+              We know septic issues can sneak up on you fast. Whether the buyer of your home really loves that kitchen
+              and is wanting to close the deal sooner than expected, or those unwanted flushed away items are returning
+              with a vengeance, call Buckaroos. Specializing in septic tank inspections & pumps.
             </p>
             <Button size="lg" asChild variant="outline">
               <Link href="/about">Learn More About Us</Link>
@@ -120,7 +140,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">Our Services</h2>
           <p className="text-center text-foreground mb-12 max-w-2xl mx-auto">
-            From routine maintenance to emergency repairs, we provide comprehensive septic services for residential and commercial properties throughout the Prescott Quad City area.
+            From routine maintenance to emergency repairs, we provide comprehensive septic services for residential and
+            commercial properties throughout the Prescott Quad City area.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {serviceCards.map((service) => (

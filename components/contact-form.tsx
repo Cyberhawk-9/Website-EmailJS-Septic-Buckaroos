@@ -1,10 +1,12 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { useRouter } from 'next/navigation'
+import type React from "react"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { useRouter } from "next/navigation"
 
 interface ContactFormProps {
   compact?: boolean
@@ -13,10 +15,10 @@ interface ContactFormProps {
 export function ContactForm({ compact = false }: ContactFormProps) {
   const router = useRouter()
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -28,23 +30,23 @@ export function ContactForm({ compact = false }: ContactFormProps) {
     // This is a placeholder that simulates the submission
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
-      console.log('Form submission data:', formData)
-      console.log('[v0] Form submitted, ready for EmailJS integration')
-      
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      console.log("Form submission data:", formData)
+      console.log("[v0] Form submitted, ready for EmailJS integration")
+
       // Redirect to thank you page
-      router.push('/thankyou')
+      router.push("/thankyou")
     } catch (error) {
-      console.error('Error submitting form:', error)
-      alert('There was an error submitting your request. Please try calling us directly.')
+      console.error("Error submitting form:", error)
+      alert("There was an error submitting your request. Please try calling us directly.")
     } finally {
       setIsSubmitting(false)
     }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }))
@@ -54,7 +56,7 @@ export function ContactForm({ compact = false }: ContactFormProps) {
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2">
+          <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
             Name *
           </label>
           <Input
@@ -65,10 +67,11 @@ export function ContactForm({ compact = false }: ContactFormProps) {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your name"
+            className="bg-white text-foreground"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium mb-2">
+          <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
             Phone *
           </label>
           <Input
@@ -79,12 +82,13 @@ export function ContactForm({ compact = false }: ContactFormProps) {
             value={formData.phone}
             onChange={handleChange}
             placeholder="(928) 555-1234"
+            className="bg-white text-foreground"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-2">
+        <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
           Email *
         </label>
         <Input
@@ -95,11 +99,12 @@ export function ContactForm({ compact = false }: ContactFormProps) {
           value={formData.email}
           onChange={handleChange}
           placeholder="your.email@example.com"
+          className="bg-white text-foreground"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-2">
+        <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
           Message *
         </label>
         <Textarea
@@ -110,11 +115,12 @@ export function ContactForm({ compact = false }: ContactFormProps) {
           onChange={handleChange}
           placeholder="Tell us about your septic needs..."
           rows={compact ? 4 : 6}
+          className="bg-white text-foreground"
         />
       </div>
 
       <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto">
-        {isSubmitting ? 'Sending...' : 'Get Your Free Quote'}
+        {isSubmitting ? "Sending..." : "Get Your Free Quote"}
       </Button>
     </form>
   )
