@@ -36,11 +36,11 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full border-b backdrop-blur transition-all duration-300",
-        "bg-white/98",
+        "bg-white/98 border-[#f5ab76]/20",
         isScrolled ? "py-3 shadow-md" : "py-5",
       )}
     >
-      <div className="container mx-auto px-4 lg:px-6">
+      <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
         <div className="flex items-center justify-between gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 group">
@@ -63,16 +63,19 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium relative group">
+            <Link
+              href="/"
+              className="text-foreground hover:text-[#f5ab76] transition-colors font-medium relative group"
+            >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f5ab76] transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="/about"
-              className="text-foreground hover:text-primary transition-colors font-medium relative group"
+              className="text-foreground hover:text-[#f5ab76] transition-colors font-medium relative group"
             >
               About Us
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f5ab76] transition-all group-hover:w-full"></span>
             </Link>
 
             {/* Services Dropdown */}
@@ -83,19 +86,19 @@ export function Header() {
             >
               <Link
                 href="/services"
-                className="flex items-center gap-1 text-foreground hover:text-primary transition-colors py-2 font-medium"
+                className="flex items-center gap-1 text-foreground hover:text-[#f5ab76] transition-colors py-2 font-medium"
               >
                 Services
                 <ChevronDown className={cn("h-4 w-4 transition-transform", isServicesOpen && "rotate-180")} />
               </Link>
               {isServicesOpen && (
                 <div className="absolute top-full left-0 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
-                  <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-xl py-2">
+                  <div className="w-80 bg-white border-2 border-[#f5ab76]/30 rounded-lg shadow-xl py-2">
                     {services.map((service) => (
                       <Link
                         key={service.href}
                         href={service.href}
-                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-gray-100 hover:text-primary transition-all hover:pl-6"
+                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-[#f5ab76]/10 hover:text-[#f5ab76] transition-all hover:pl-6"
                       >
                         {service.name}
                       </Link>
@@ -107,17 +110,17 @@ export function Header() {
 
             <Link
               href="/septic-101"
-              className="text-foreground hover:text-primary transition-colors font-medium relative group"
+              className="text-foreground hover:text-[#f5ab76] transition-colors font-medium relative group"
             >
               Septic 101
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f5ab76] transition-all group-hover:w-full"></span>
             </Link>
             <Link
               href="/products"
-              className="text-foreground hover:text-primary transition-colors font-medium whitespace-nowrap relative group"
+              className="text-foreground hover:text-[#f5ab76] transition-colors font-medium whitespace-nowrap relative group"
             >
               Products
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f5ab76] transition-all group-hover:w-full"></span>
             </Link>
           </nav>
 
@@ -125,9 +128,9 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
             <a
               href="tel:512-555-STAR"
-              className="flex items-center gap-2 text-foreground hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-muted hover:scale-105"
+              className="flex items-center gap-2 text-foreground hover:text-[#f5ab76] transition-all px-3 py-2 rounded-lg hover:bg-[#f5ab76]/10 hover:scale-105"
             >
-              <Phone className="h-5 w-5 flex-shrink-0 text-foreground" />
+              <Phone className="h-5 w-5 flex-shrink-0 text-[#f5ab76]" />
               <span className="font-semibold text-base whitespace-nowrap">(512) 555-STAR</span>
             </a>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
@@ -147,17 +150,17 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 space-y-3">
+          <div className="lg:hidden mt-4 pb-4 space-y-3 border-t border-[#f5ab76]/20 pt-4">
             <Link
               href="/"
-              className="block py-2 text-foreground hover:text-primary transition-colors"
+              className="block py-2 text-foreground hover:text-[#f5ab76] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block py-2 text-foreground hover:text-primary transition-colors"
+              className="block py-2 text-foreground hover:text-[#f5ab76] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
@@ -167,7 +170,7 @@ export function Header() {
             <div>
               <Link
                 href="/services"
-                className="block py-2 font-semibold text-foreground hover:text-primary transition-colors"
+                className="block py-2 font-semibold text-foreground hover:text-[#f5ab76] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
@@ -177,7 +180,7 @@ export function Header() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block py-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="block py-1 text-sm text-muted-foreground hover:text-[#f5ab76] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.name}
@@ -188,23 +191,23 @@ export function Header() {
 
             <Link
               href="/septic-101"
-              className="block py-2 text-foreground hover:text-primary transition-colors"
+              className="block py-2 text-foreground hover:text-[#f5ab76] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Septic 101
             </Link>
             <Link
               href="/products"
-              className="block py-2 text-foreground hover:text-primary transition-colors"
+              className="block py-2 text-foreground hover:text-[#f5ab76] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Recommended Products
             </Link>
 
-            <div className="pt-4 space-y-3 border-t">
+            <div className="pt-4 space-y-3">
               <a
                 href="tel:512-555-STAR"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors py-2"
+                className="flex items-center gap-2 text-foreground hover:text-[#f5ab76] transition-colors py-2"
               >
                 <Phone className="h-5 w-5" />
                 <span className="font-semibold text-lg">(512) 555-STAR</span>

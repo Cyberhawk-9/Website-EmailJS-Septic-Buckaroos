@@ -10,8 +10,9 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 const geist = Geist({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Buckaroos Septics, LLC",
-  description: "Professional Septic Services",
+  title: "Lone Star Septic | Professional Septic Services in Texas",
+  description:
+    "Professional septic tank inspections, pumping, and maintenance services serving the greater Austin and Texas area",
   icons: {
     icon: "/images/buckaroos-logo.png",
     shortcut: "/images/buckaroos-logo.png",

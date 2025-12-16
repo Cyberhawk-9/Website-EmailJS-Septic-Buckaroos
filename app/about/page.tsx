@@ -6,9 +6,8 @@ import Link from "next/link"
 import { Heart, Users, Clock, Award, Phone, MapPin } from "lucide-react"
 
 export const metadata = {
-  title: "About Us - Buckaroos Septics, LLC",
-  description:
-    "Learn about Buckaroos Septics, a family-owned septic services company operating in the Prescott Quad City area since 2013.",
+  title: "About Us - Lone Star Septic",
+  description: "Learn about Lone Star Septic, a family-owned septic services company proudly serving Texas since 2013.",
 }
 
 export default function AboutPage() {
@@ -18,9 +17,9 @@ export default function AboutPage() {
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About Buckaroos Septics</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About Lone Star Septic</h1>
             <p className="text-xl text-foreground">
-              Family-owned, professionally operated, and dedicated to exceptional service since 2013
+              Family-owned, Texas-proud, and dedicated to exceptional service since 2013
             </p>
           </div>
         </div>
@@ -30,36 +29,37 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="mb-8 bg-white">
+            <Card className="mb-8 bg-card">
               <CardContent className="pt-6">
-                <h2 className="text-2xl font-bold mb-4 text-foreground">Our Story</h2>
+                <h2 className="text-2xl font-bold mb-4 text-foreground">Our Texas Story</h2>
                 <p className="text-lg leading-relaxed mb-6 text-foreground">
-                  Originally founded in 2006, Lew Nickel has owned and operated Buckaroos since April, 2013. Buckaroos
-                  is a family owned company with a crew genuinely eager to perform their best for our customers.
+                  Founded in the heart of Texas in 2013, Lone Star Septic has been serving the great state with pride
+                  and professionalism. We're a family-owned company with a crew genuinely eager to perform their best
+                  for our customers—because that's the Texas way.
                 </p>
                 <p className="text-lg leading-relaxed mb-6 text-foreground">
-                  You will experience quick results, and always hear a smile in our voice. Realtors or homeowners, you
-                  will notice the difference because we treat you as the individual person you are and not like a
-                  number.
+                  You'll experience quick results, and always hear a smile in our voice. Whether you're a realtor
+                  working on a tight closing schedule or a homeowner needing reliable service, you'll notice the
+                  difference. We treat you as the individual person you are, not like a number.
                 </p>
                 <p className="text-lg leading-relaxed text-foreground">
-                  If you need a septic tank inspection or pump, please call us for your quote, and, let us know if
-                  someone made you smile today.
+                  If you need a septic tank inspection or pump, please call us for your quote. And remember,
+                  everything's better when done with Texas hospitality!
                 </p>
               </CardContent>
             </Card>
 
             {/* Service Area */}
-            <Card className="mb-8 bg-orange-50 border-secondary">
+            <Card className="mb-8 bg-accent/20 border-accent">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-6 w-6 text-secondary flex-shrink-0 mt-1" />
+                  <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-xl font-bold mb-2 text-foreground">Serving the Prescott Quad City Area</h3>
+                    <h3 className="text-xl font-bold mb-2 text-foreground">Serving the Great State of Texas</h3>
                     <p className="text-foreground leading-relaxed">
-                      Based in Chino Valley, we proudly serve residential and commercial customers throughout the
-                      Prescott Quad City area. Our local expertise means we understand the unique soil conditions and
-                      septic system requirements of our region.
+                      Based in Austin, we proudly serve residential and commercial customers throughout Central Texas
+                      and beyond. Our local expertise means we understand the unique soil conditions and septic system
+                      requirements of the Lone Star State.
                     </p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
               <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/images/2025-11-17-12-20-37.jpg"
-                  alt="Buckaroos Septics service truck"
+                  alt="Lone Star Septic service truck"
                   fill
                   className="object-cover"
                 />
@@ -87,35 +87,35 @@ export default function AboutPage() {
             </div>
 
             {/* Why Choose Us */}
-            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Why Customers Choose Buckaroos</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Why Texans Choose Lone Star</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <Card className="bg-white">
+              <Card className="bg-card">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Heart className="h-8 w-8 text-secondary flex-shrink-0" />
-                    <h3 className="font-bold text-xl text-foreground">Family Values</h3>
+                    <h3 className="font-bold text-xl text-foreground">Texas Family Values</h3>
                   </div>
                   <p className="text-foreground">
-                    As a family-owned business, we bring that same care and attention to every customer we serve. We're
-                    not a faceless corporation—we're your neighbors.
+                    As a Texas family-owned business, we bring that same care and attention to every customer we serve.
+                    We're not a faceless corporation—we're your neighbors.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white">
+              <Card className="bg-card">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Users className="h-8 w-8 text-secondary flex-shrink-0" />
-                    <h3 className="font-bold text-xl text-foreground">Experienced Team</h3>
+                    <h3 className="font-bold text-xl text-foreground">Experienced Texas Team</h3>
                   </div>
                   <p className="text-foreground">
                     Our crew is genuinely eager to perform their best, bringing years of expertise to every job. We stay
-                    current with industry best practices and Arizona regulations.
+                    current with industry best practices and Texas state regulations.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white">
+              <Card className="bg-card">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Phone className="h-8 w-8 text-secondary flex-shrink-0" />
@@ -123,32 +123,32 @@ export default function AboutPage() {
                   </div>
                   <p className="text-foreground">
                     You'll always hear a smile in our voice and be treated as an individual, never as just a number. We
-                    remember our customers and their specific needs.
+                    remember our customers and their specific needs—that's Texas hospitality.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white">
+              <Card className="bg-card">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Clock className="h-8 w-8 text-secondary flex-shrink-0" />
-                    <h3 className="font-bold text-xl text-foreground">Fast Response</h3>
+                    <h3 className="font-bold text-xl text-foreground">Texas-Fast Response</h3>
                   </div>
                   <p className="text-foreground">
                     We know septic issues can't wait. That's why we prioritize quick response times and efficient
-                    service to get your system back up and running.
+                    service to get your system back up and running faster than a jackrabbit.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
             {/* What Sets Us Apart */}
-            <Card className="mb-8 bg-white">
+            <Card className="mb-8 bg-card">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold mb-6 text-foreground">What Sets Us Apart</h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
+                    <Award className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold mb-1 text-foreground">Realtor-Friendly Service</h4>
                       <p className="text-foreground text-sm">
@@ -158,17 +158,17 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
+                    <Award className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold mb-1 text-foreground">Local Knowledge</h4>
+                      <h4 className="font-semibold mb-1 text-foreground">Texas Local Knowledge</h4>
                       <p className="text-foreground text-sm">
-                        Years of experience in the Prescott Quad City area means we understand local soil conditions,
-                        county requirements, and common septic system challenges.
+                        Years of experience across Texas means we understand local soil conditions, state requirements,
+                        and common septic system challenges in the Lone Star State.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
+                    <Award className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold mb-1 text-foreground">Comprehensive Services</h4>
                       <p className="text-foreground text-sm">
@@ -178,12 +178,12 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
+                    <Award className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold mb-1 text-foreground">Transparent Pricing</h4>
+                      <h4 className="font-semibold mb-1 text-foreground">Transparent Texas-Honest Pricing</h4>
                       <p className="text-foreground text-sm">
                         We provide clear, upfront quotes with no hidden fees. You'll know exactly what to expect before
-                        we begin any work.
+                        we begin any work—that's the straight-shooting Texas way.
                       </p>
                     </div>
                   </div>
@@ -205,7 +205,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Ready to Work With Us?</h2>
-            <Card className="bg-white">
+            <Card className="bg-card">
               <CardContent className="pt-6">
                 <ContactForm />
               </CardContent>
