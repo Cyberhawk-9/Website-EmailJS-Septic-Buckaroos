@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ContactForm } from "@/components/contact-form"
 import { AnimatedSection } from "@/components/animated-section"
 import { Heart, Star, Shield, Award, Zap, Users, CheckCircle, TrendingUp } from "lucide-react"
+import { Counter } from "@/components/counter"
 
 export default function HomePage() {
   const serviceCards = [
@@ -284,10 +285,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
-              { number: "10+", label: "Years in Business", icon: TrendingUp },
-              { number: "5000+", label: "Happy Customers", icon: Users },
-              { number: "24/7", label: "Emergency Service", icon: Zap },
-              { number: "100%", label: "Satisfaction Rate", icon: Star },
+              { end: 10, suffix: "+", label: "Years in Business", icon: TrendingUp },
+              { end: 5000, suffix: "+", label: "Happy Customers", icon: Users },
+              { label: "24/7 Emergency Service", isText: true, icon: Zap },
+              { end: 100, suffix: "%", label: "Satisfaction Rate", icon: Star },
             ].map((stat, index) => (
               <AnimatedSection key={stat.label} animation="scale" delay={index * 100}>
                 <div className="text-center group hover:scale-110 transition-transform duration-300">
@@ -296,7 +297,9 @@ export default function HomePage() {
                       <stat.icon className="h-8 w-8 text-foreground" />
                     </div>
                   </div>
-                  <div className="text-5xl md:text-6xl font-bold mb-2 text-foreground">{stat.number}</div>
+                  <div className="text-5xl md:text-6xl font-bold mb-2 text-foreground">
+                    {stat.isText ? "24/7" : <Counter end={stat.end} suffix={stat.suffix} />}
+                  </div>
                   <div className="text-lg text-foreground/90">{stat.label}</div>
                 </div>
               </AnimatedSection>
